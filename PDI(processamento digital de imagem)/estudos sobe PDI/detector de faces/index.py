@@ -6,7 +6,7 @@ face_classifier = cv.CascadeClassifier(
 
 img = cv.imread("gestao-pessoas.jpg")
 
-
+# A funcao redimensiona a imagem
 def redimensiona(imagem):
     (altura, largura, canais) = imagem.shape
     if(largura > 390 or altura > 210):
