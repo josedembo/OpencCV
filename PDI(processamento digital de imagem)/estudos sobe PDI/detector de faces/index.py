@@ -4,9 +4,11 @@ import cv2 as cv
 face_classifier = cv.CascadeClassifier(
     cv.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-img = cv.imread("gestao-pessoas.jpg")
+img = cv.imread("animais.jpg")
 
 # A funcao redimensiona a imagem
+
+
 def redimensiona(imagem):
     (altura, largura, canais) = imagem.shape
     if(largura > 390 or altura > 210):
